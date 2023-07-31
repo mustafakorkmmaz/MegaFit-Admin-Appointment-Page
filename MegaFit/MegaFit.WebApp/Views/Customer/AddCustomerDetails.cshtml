@@ -1,0 +1,64 @@
+﻿@model CustomerVisitDto
+
+
+
+<div class="col-6 col-lg-7">
+
+    <form method="post" asp-controller="Customer" asp-action="AddCustomerDetails">
+
+        <input type="hidden" asp-for="CustomerId" value="@ViewBag.CustomerKimlik"/>
+
+        <div class="mb-2">
+            <label class="form-label">Şikayet</label>
+            <textarea class="custom-textarea" cols="10" rows="10" asp-for="Complaint"></textarea>
+        </div>
+
+        <div class="mb-2" id="sickDiv">
+            <label class="form-label">Hasta Durumu</label>
+            <input id="sickness" type="checkbox" class="form-check" asp-for="IsSick" />
+            <textarea id="secretTextArea" class="d-none custom-textarea" asp-for="Sick"></textarea>
+        </div>
+       
+
+        <div class="mb-2">
+            <label class="form-label">İlaç Kullanıyor Mu</label>
+            <input type="checkbox" class="form-check" asp-for="UsingDrugs" />
+        </div>
+
+        <div class="mb-2">
+            <label class="form-label">Tarih</label>
+            <input type="datetime-local" class="form-control" asp-for="VisitDate" />
+        </div>
+        
+
+        <div class="text-end">
+            <button type="submit" class="btn btn-dark">
+                İleri
+            </button>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    <script>
+        var mainDiv = document.getElementById("secretTextArea");
+        var check = document.getElementById("sickness");
+        check.addEventListener('change', function(event){
+            if(event.target.checked)
+            {
+                mainDiv.classList.remove("d-none");
+                mainDiv.classList.add("d-block");
+            }
+            else
+            {
+                mainDiv.classList.add("d-none");
+            } 
+
+
+        })
+
+    </script>
+}
+
+

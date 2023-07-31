@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MegaFit.WebApp
+build_property.RootNamespace = MegaFit.WebApp
+build_property.ProjectDir = D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.WebApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.WebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Appointment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Customer/AddCustomerAssessment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRkQ3VzdG9tZXJBc3Nlc3NtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Customer/AddCustomerDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRkQ3VzdG9tZXJEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Customer/AddDealExistedCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRkRGVhbEV4aXN0ZWRDdXN0b21lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Customer/SelectDeal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcU2VsZWN0RGVhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Customer/ViewDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcVmlld0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Therapy/CreateTherapy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlcmFweVxDcmVhdGVUaGVyYXB5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Therapy/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlcmFweVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Yazılım/Wissen/.NET/Projeler/Takvim Konsol/MegaFit/MegaFit.WebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2sigqk1e9o

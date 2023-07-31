@@ -1,0 +1,125 @@
+﻿@model CustomerMegaSummary
+
+<table class="table table-active">
+
+    <tr>
+        <td>
+            <label>TC Kimlik Numarası</label>
+        </td>
+        <td>
+            <span>@Model.CustomerIdentityNumber</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Danışan Adı:</label>
+        </td>
+        <td>
+            <span>@Model.CustomerName</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Danışan Soyadı:</label>
+        </td>
+        <td>
+            <span>@Model.CustomerSurname</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Yaş:</label>
+        </td>
+        <td>
+            <span>@Model.CustomerAge</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Boy:</label>
+        </td>
+        <td>
+            <span>@Model.CustomerHeigth</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Kilo:</label>
+        </td>
+        <td>
+            <span>@Model.CustomerWeight</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Email:</label>
+        </td>
+        <td>
+            <span>@Model.CustomerEmailAddress</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Telefon Numarası:</label>
+        </td>
+        <td>
+            <span>@Model.CustomerPhoneNumber</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Adres:</label>
+        </td>
+        <td>
+            <span>@Model.CustomerAddress</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Danışan Şikayetleri:</label>
+        </td>
+        <td>
+            <span>@Model.CustomerComplaint</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Hastalıklar:</label>
+        </td>
+        <td>
+            @if (!string.IsNullOrEmpty(Model.CustomerSicknesses))
+            {
+                <span>@Model.CustomerSicknesses</span>
+            }
+            else
+            {
+                <span>Yok</span>
+            }
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>İlaç Kullanma Durumu:</label>
+        </td>
+        <td>
+            <span>@Model.HasUsingDrugs</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>İlk Kliniğimize Geliş Tarihi:</label>
+        </td>
+        <td>
+            <span>@Model.CustomerFirstVisit.ToString("dd-MM-yyyy")</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Değerlendirme :</label>
+        </td>
+        <td>
+            <span>@Model.CustomerEvaulation</span>
+        </td>
+    </tr>
+    
+</table>

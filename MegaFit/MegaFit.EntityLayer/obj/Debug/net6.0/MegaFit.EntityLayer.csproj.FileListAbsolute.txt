@@ -1,0 +1,15 @@
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\bin\Debug\net6.0\MegaFit.EntityLayer.deps.json
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\bin\Debug\net6.0\MegaFit.EntityLayer.dll
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\bin\Debug\net6.0\MegaFit.EntityLayer.pdb
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\bin\Debug\net6.0\MegaFit.dll
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\bin\Debug\net6.0\MegaFit.pdb
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\obj\Debug\net6.0\MegaFit.EntityLayer.csproj.AssemblyReference.cache
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\obj\Debug\net6.0\MegaFit.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\obj\Debug\net6.0\MegaFit.EntityLayer.AssemblyInfoInputs.cache
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\obj\Debug\net6.0\MegaFit.EntityLayer.AssemblyInfo.cs
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\obj\Debug\net6.0\MegaFit.EntityLayer.csproj.CoreCompileInputs.cache
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\obj\Debug\net6.0\MegaFit.EntityLayer.csproj.CopyComplete
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\obj\Debug\net6.0\MegaFit.EntityLayer.dll
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\obj\Debug\net6.0\refint\MegaFit.EntityLayer.dll
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\obj\Debug\net6.0\MegaFit.EntityLayer.pdb
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit.EntityLayer\obj\Debug\net6.0\ref\MegaFit.EntityLayer.dll

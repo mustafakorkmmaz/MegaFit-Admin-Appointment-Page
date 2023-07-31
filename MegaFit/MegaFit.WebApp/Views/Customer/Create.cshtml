@@ -1,0 +1,65 @@
+﻿@model CustomerDto
+<div class="col-6 col-lg-7">
+    <div>
+        @if(ViewBag.Error != null)
+        {
+            <div>
+                <h1>@ViewBag.Error</h1>
+            </div>
+
+        }
+    </div>
+    <form method="post" asp-controller="Customer" asp-action="Create">
+        
+
+        <div class="mb-2">
+            <label class="form-label">İsim</label>
+            <input class="form-control" asp-for="FirstName" />
+        </div>
+
+        <div class="mb-2">
+            <label class="form-label">Soyisim</label>
+            <input class="form-control" asp-for="LastName" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Yaş</label>
+            <input type="number" class="form-control" asp-for="Age" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Boy</label>
+            <input type="number" class="form-control" asp-for="Height" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Kilo</label>
+            <input type="number" class="form-control" asp-for="Weight" />
+        </div>
+
+        <div class="mb-2">
+            <label class="form-label">Email Adres</label>
+            <input class="form-control" asp-for="EmailAddress"/>
+        </div>
+
+        <div class="mb-2">
+            <label class="form-label">TC Kimlik</label>
+            <input class="form-control" asp-for="IdentityNumber" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Telefon Numarası</label>
+            <input class="form-control" asp-for="PhoneNumber"/>
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Adres</label>
+            <textarea cols="5" rows="7" class="custom-textarea" asp-for="CustomerAddress"></textarea>
+        </div>
+
+        <div class="text-end">
+            <button type="submit" class="btn btn-dark">
+                İleri
+            </button>
+        </div>
+    </form>
+</div>
+
+
+
+

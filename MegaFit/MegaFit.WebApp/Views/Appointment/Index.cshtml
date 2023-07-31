@@ -1,0 +1,102 @@
+﻿
+
+
+
+
+<div id="calendar"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+@section Scripts {
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'timeGridWeek',
+                slotLabelFormat: {
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    omitZeroMinute: false,
+                    meridiem: false
+                },
+                locale: 'tr',
+                slotMinTime: '09:00:00',
+                slotMaxTime: '21:00:00',
+                eventContent: function (arg) {
+                    var eventElement = document.createElement('div');
+                    eventElement.innerHTML = '<b>' + arg.event.title + '</b>';
+
+                    var btn = document.createElement('button');
+                    btn.textContent = 'Tamamlandı';
+                    btn.classList.add("btn-sm")
+                    btn.classList.add("btn-success")
+                    
+
+                    btn.addEventListener('click', function () {
+                        $.ajax({
+                            url: `/Appointment/MakeCompleted?id=${arg.event.id}`,
+                            method : 'get',
+                            success: function(){
+                                window.location.reload();
+                            }
+                            
+
+
+                        })
+                    });
+                    eventElement.classList.add("text-center");
+                    
+                    var newDiv=document.createElement('div');
+
+                    eventElement.appendChild(newDiv);
+                    newDiv.appendChild(btn);
+
+                    return { domNodes: [eventElement] };
+                }
+            });
+
+            $.ajax({
+                url: '/Appointment/GetAppointments',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                   
+
+                    for (var i = 0; i < data.length; i++) {
+                        var event = data[i];
+                        calendar.addEvent({
+                            id :event.id,
+                            title: event.customerInfo, // customerInfo olarak değiştirildi
+                            start: event.appointmentDate,
+                            duration:'01:00',
+                            color: event.isDone ? 'green' : 'red',
+                            /*isDone: event.isDone*/ // event objesine "isDone" özelliğini ekliyoruz
+
+                        });
+                    }
+
+                    calendar.render();
+                },
+                error: function () {
+                    // Hata durumunda gerekli işlemleri yapabilirsiniz
+                }
+            });
+        });
+
+
+
+    </script>
+}
+
+
+

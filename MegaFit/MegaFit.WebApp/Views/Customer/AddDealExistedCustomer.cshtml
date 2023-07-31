@@ -1,0 +1,93 @@
+﻿@model DealDto
+<div class="col-6 col-lg-7">
+    
+    <form method="post" asp-controller="Customer" asp-action="SelectDeal">
+
+        <div class="mb-2">
+            <label class="form-label">Danışan Seç</label>
+            <select asp-for="CustomerId" class="form-select" asp-items="ViewBag.Customers"></select>
+        </div>
+
+        <div class="mb-2">
+            <label class="form-label">Paket Türü</label>
+            <select asp-for="PackageId" class="form-select" asp-items="ViewBag.Packs"></select>
+        </div>
+        @*<div class="mb-2">
+            <label class="form-label">Anlaşma Süresi(Ay)</label>
+            <input class="form-control" asp-for="PackageDuration" />
+        </div>*@
+
+        <div class="mb-2">
+            <label class="form-label">İlk Gün</label>
+            @*<input class="form-control" asp-for="AppointmentDayFirst" />*@
+            <select class="form-select" asp-for="AppointmentDayFirst">
+                <option>--Seçiniz--></option>
+                <option>Pazartesi</option>
+                <option>Salı</option>
+                <option>Çarşamba</option>
+                <option>Perşembe</option>
+                <option>Cuma</option>
+            </select>
+        </div>
+        <div class="mb-2">
+            <label class="form-label">İkinci Gün</label>
+            <select class="form-select" asp-for="AppointmentDaySecond">
+                <option>Pazartesi</option>
+                <option>Salı</option>
+                <option>Çarşamba</option>
+                <option>Perşembe</option>
+                <option>Cuma</option>
+            </select>
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Saatler</label>
+            <select asp-for="AppointmentTimeId" class="form-select" asp-items="ViewBag.Hours"></select>
+        </div>
+        <div class="mb-2">
+            <label class="form-label">İlk Randevu Tarihi</label>
+            <input type="date" class="form-control" asp-for="FirstAppointment" />
+        </div>
+
+        <div class="text-end">
+            <button type="submit" class="btn btn-dark">
+                Kaydet
+            </button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

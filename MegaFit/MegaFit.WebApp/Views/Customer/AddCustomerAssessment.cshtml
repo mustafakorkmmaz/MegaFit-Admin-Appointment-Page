@@ -1,0 +1,27 @@
+﻿@model CustomerAssessmentDto
+
+
+<div class="col-6 col-lg-7">
+
+    <form method="post" asp-controller="Customer" asp-action="AddCustomerAssessment">
+
+        <input type="hidden" asp-for="VisitId" value="@ViewBag.CustomerVisitKimlik" />
+        <div class="mb-2" id="sickDiv">
+            <label class="form-label">Hasta Durumu</label>
+            <textarea asp-for="Evaluation" class="custom-textarea"></textarea>
+        </div>
+            
+        <div class="text-end">
+            <button type="submit" class="btn btn-dark">
+                İleri
+            </button>
+        </div>
+    </form>
+</div>
+
+        
+
+
+
+        
+

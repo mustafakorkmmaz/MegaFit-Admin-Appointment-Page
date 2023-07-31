@@ -1,0 +1,95 @@
+﻿@model IEnumerable<CustomerMegaSummary>
+
+<h1>Hasta Detay Bilgileri</h1>
+
+<div class="row">
+    <div class="col-12">
+        <div class="text-end mb-2">
+            <a asp-controller="Customer" asp-action="Create" class="btn btn-primary btn-sm">Yeni ekle</a>
+        </div>
+        <table class="table table-striped" id="myTable" >
+            <thead>
+                <tr>
+                    <th>Kimlik Numarası</th>
+                    <th>İsim</th>
+                    <th>Soyisim</th>
+                    <th>Telefon Numarası</th>
+                    <th>Yaş</th>
+                    <th>Kilo(kg)</th>
+                    <th>Boy(cm)</th>
+                    <th>Adres</th>
+                    <th>E-mail</th>
+                    <th>İlk Ziyaret</th>
+                    <th>İlk Değerlendirme</th>
+                    <th>Daha Detaylı Görüntüle</th>
+                    <th>Kayıtları Silme İşlemi</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var customer in Model)
+                {
+                    //Ayrıntılar sayfası yap daha sonra
+                    <tr>
+                        <td>@customer.CustomerIdentityNumber</td>
+                        <td>@customer.CustomerName</td>
+                        <td>@customer.CustomerSurname</td>
+                        <td>@customer.CustomerPhoneNumber</td>
+                        <td>@customer.CustomerAge</td>
+                        <td>@customer.CustomerWeight</td>
+                        <td>@customer.CustomerHeigth</td>
+                        <td>@customer.CustomerAddress</td>
+                        <td>@customer.CustomerEmailAddress</td>
+                        <td>@customer.CustomerFirstVisit.ToString("dd-MM-yyyy")</td>
+                        <td>@customer.CustomerEvaulation</td>
+                        <td>
+                            <a class="btn btn-info" asp-controller="Customer" asp-action="ViewDetail" asp-route-id="@customer.CustomerAssessmentId">Detaylar</a>
+                        </td>
+                        <td>
+                            <button class="delete-button btn btn-danger"  data-customer-assessment-id="@customer.CustomerAssessmentId">Sil</button>
+                        </td>
+
+                        
+                        
+                       
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <script>
+        let clickedButtons = document.getElementsByClassName('delete-button');
+        for (let i = 0; i < clickedButtons.length; i++) {
+            var deleteButton = clickedButtons[i];
+            deleteButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: `/Customer/Delete?id=${this.dataset.customerAssessmentId}`,
+                    method: 'post',
+                    success: function (event) {
+                        let confirmed = confirm("Kullanıcı ile ilgili tüm veriler silinmek üzere devam etmek istiyor musunuz ?");
+                        if (confirmed) {
+                            alert(event.message);
+                            window.location.reload(); 
+                        }
+                        else {
+                            event.preventDefault();
+                        }
+
+                    }
+                });
+            })
+        }
+    </script>
+
+
+
+}
+

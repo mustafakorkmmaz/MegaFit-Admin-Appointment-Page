@@ -1,0 +1,44 @@
+﻿@model List<TherapyPackageDto>
+<h1>Therapy İsimleri</h1>
+
+<div class="row">
+    <div class="col-12">
+        <div class="text-end mb-2">
+            <a asp-controller="Therapy" asp-action="CreateTherapy" class="btn btn-primary btn-sm">Yeni ekle</a>
+        </div>
+        <table class="table table-striped" id="myTable">
+            <thead>
+                <tr>
+                    <th>Paket Süresi </th>
+                    <th>Terapi Adı</th>
+                    
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var therapy in Model)
+                {
+                    //Ayrıntılar sayfası yap daha sonra
+                    <tr>
+                        <td>@therapy.Month</td>
+                        <td>@therapy.TherapyName</td>
+                    </tr>
+                }
+                       
+                        
+                        
+
+
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+}

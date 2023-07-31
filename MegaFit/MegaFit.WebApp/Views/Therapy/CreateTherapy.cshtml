@@ -1,0 +1,52 @@
+﻿@model TherapyDto
+<div class="col-6 col-lg-7">
+    
+    <form id="therapy_form">
+
+
+        <div class="mb-2">
+            <label class="form-label">Terapi İsmi</label>
+            <input class="form-control" name="TherapyName" type="text"/>
+        </div>
+
+       
+
+        <div class="text-end">
+            <button type="submit" class="btn btn-dark">
+                İleri
+            </button>
+        </div>
+    </form>
+</div>
+
+@section Scripts 
+{
+    <script>
+        $('#therapy_form').submit(function (e)
+        {
+            e.preventDefault();
+            $.ajax({
+                url:'/Therapy/CreateTherapy',
+                method:'post',
+                data: $(this).serialize(),
+                success : function(processMessage){
+                    alert(processMessage.message);
+                    window.location.href='/Therapy/Index';
+                }
+            })
+
+
+        });
+
+
+
+
+
+    </script>
+
+
+
+}
+
+
+

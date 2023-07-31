@@ -1,0 +1,12 @@
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\bin\Debug\net6.0\MegaFit.deps.json
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\bin\Debug\net6.0\MegaFit.dll
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\bin\Debug\net6.0\MegaFit.pdb
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\obj\Debug\net6.0\MegaFit.csproj.AssemblyReference.cache
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\obj\Debug\net6.0\MegaFit.GeneratedMSBuildEditorConfig.editorconfig
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\obj\Debug\net6.0\MegaFit.AssemblyInfoInputs.cache
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\obj\Debug\net6.0\MegaFit.AssemblyInfo.cs
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\obj\Debug\net6.0\MegaFit.csproj.CoreCompileInputs.cache
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\obj\Debug\net6.0\MegaFit.dll
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\obj\Debug\net6.0\refint\MegaFit.dll
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\obj\Debug\net6.0\MegaFit.pdb
+D:\Yazılım\Wissen\.NET\Projeler\Takvim Konsol\MegaFit\MegaFit\obj\Debug\net6.0\ref\MegaFit.dll
